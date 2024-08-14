@@ -6,7 +6,7 @@ if (!isset($_GET['id'])) {
 
 $id = intval($_GET['id']); // Sanitiza o ID
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['excluir'])) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Prepara a consulta SQL para excluir a categoria
     $sql = "DELETE FROM categoria WHERE id_categoria = ?";
     $stmt = $connect->prepare($sql);
