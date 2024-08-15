@@ -1,6 +1,6 @@
-CREATE DATABASE categorias;
+CREATE DATABASE ludofashion;
 
-use categorias;
+use ludofashion;
 CREATE TABLE categoria(
     id_categoria int primary key auto_increment,
     nome varchar(255) not null
