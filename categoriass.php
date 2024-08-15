@@ -51,7 +51,7 @@ $result = $stmt->get_result(); //$result = $stmt->get_result();: Obtém o result
             <?php foreach ($result as $item): ?> <!--  Inicia um loop que itera sobre cada item no resultado da consulta SQL.-->
                 <div class="categorias-2"> <!-- Define um contêiner para cada categoria.-->
 
-                    <form action="" method="post"> <!-- Cria um formulário para editar a categoria. Inclui um campo oculto com o ID da categoria. -->
+                    <form action="" method="post"> <!-- Cria um formulário para editar a categoria. -->
 
                         <a><?php echo htmlspecialchars($item['nome']); ?></a>
 
